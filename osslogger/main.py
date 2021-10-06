@@ -6,8 +6,8 @@ import re
 
 
 def qzh7537():
-    accessKeyId = "LTAI5tMehJDuCAnhM1ZaoQbx"
-    accessKey = "tjgPDMNH1xffnzRFk1ANuULPvcZPm9"
+    accessKeyId = ""
+    accessKey = ""
     endpoint = "cn-guangzhou.log.aliyuncs.com"
     client = LogClient(endpoint, accessKeyId, accessKey)
     project_name = "oss-log-1214875359147985-cn-guangzhou"
@@ -37,8 +37,8 @@ def qzh7537():
 
 
 def miliaccount():
-    accessKeyId = "LTAI5tKiSoiUJAcq3YogMVeo"
-    accessKey = "6y0p8UivebogEokmmvbVtQSz115Yuc"
+    accessKeyId = ""
+    accessKey = ""
     endpoint = "cn-guangzhou.log.aliyuncs.com"
     client = LogClient(endpoint, accessKeyId, accessKey)
     project_name = "oss-log-1939026247751717-cn-guangzhou"
