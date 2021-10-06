@@ -1,0 +1,68 @@
+<img id="img" src="" alt=""/>
+
+<script>
+    function getHttpObject() {
+    var xhr=false;
+    if (window.XMLHttpRequest)
+        xhr=new XMLHttpRequest();
+    else if (window.ActiveXObject)
+    {
+        xhr=new ActiveXObject("Microsoft.XMLHttp");
+    }
+    return xhr;
+}
+
+function send (url, callback,imgId) { // requestWay(GET,POST)
+    callback = callback || function (json) {};
+
+    var xhr = getHttpObject();
+
+    xhr.open("GET", url, true);
+    xhr.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+
+    xhr.timeout = 10000;
+    xhr.responseType ="arraybuffer";
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && (xhr.status == 200 || xhr.status==304)) {
+            var response = xhr.response;
+            //console.log("类型"+typeof(response));
+            // alert(response);
+            let dataView = new DataView(response);
+            let data = new Uint8Array(dataView.byteLength);
+            for (let i = 0; i < dataView.byteLength; i++){
+                data[i] = dataView.getInt8(i);
+            }
+            //console.log("接收到的数组是::"+data.toString());
+            let key = 968542557;
+            // let key = 1558888552;
+            for (let i = 0; i < 100; i++) {
+                if (i >= data.length) {
+                    break;
+                }
+                data[i] = (data[i] ^ key) & 0xff;
+                if (data[i] > 127){
+                    data[i] -= 256;
+                }
+            }
+            console.log(data)
+            let arrayBuffer = data.buffer
+            let aBlob = new Blob([arrayBuffer],{ type: "application/octet-binary" });
+
+            let imgBlob = URL.createObjectURL(aBlob);
+
+            callback(imgBlob,imgId);
+        }
+    };
+    xhr.send();
+
+}
+
+send("https://ln4ux6keauayigg.wehoofurniture.com/hd/ak/dist/vj_4.ceb",pImg1,"img");
+
+function pImg1(imgBlob,imgId) {
+    let img1 = document.getElementById(imgId)
+
+    img1.src = imgBlob;
+}
+
+</script>
