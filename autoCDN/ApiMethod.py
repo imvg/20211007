@@ -27,16 +27,16 @@ class Methods:
                     domainList.append(domain)
                     domainList.append("*." + domain)
                 accountList = {
-                    'xyaccount': {"access_key": "LTAI4G5otMb3k5NLpCCbA5B7",
-                                  "secret_key": "CL3vfVxc89dzyaaLhtfWa52vmkgUso"},
-                    'miliaccount': {"access_key": "LTAI5tKiSoiUJAcq3YogMVeo",
-                                    "secret_key": "6y0p8UivebogEokmmvbVtQSz115Yuc"},
-                    'beiyong889900': {"access_key": "LTAI5tQ98XHgEZdKwkw9Cv4L",
-                                      "secret_key": "vNe3ifhzLJDICebNuf9RmVJT8PwQcu"},
-                    'qzh7537': {"access_key": "LTAI5t725KP6x74rtnyVdmQU",
-                                "secret_key": "G0kxNJcv88m2zM1qPdZ9AnHGYyD63f"},
-                    'luzhuanyong001': {"access_key": "LTAI5tDdKhFEdpVGTGUXsQep",
-                                "secret_key": "BknC4YsgBALzxLwIC8Jy5sAZ91Fcx9"}
+                    'xyaccount': {"access_key": "",
+                                  "secret_key": ""},
+                    'miliaccount': {"access_key": "",
+                                    "secret_key": ""},
+                    'beiyong889900': {"access_key": "",
+                                      "secret_key": ""},
+                    'qzh7537': {"access_key": "",
+                                "secret_key": ""},
+                    'luzhuanyong001': {"access_key": "",
+                                "secret_key": ""}
                 }
                 sourceDict = {
                     'lubei': ['source1.dpagesource.com', 'source2.dpagesource.com'],
