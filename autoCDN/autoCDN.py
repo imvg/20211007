@@ -141,8 +141,3 @@ class AliCDN:
         # 复制代码运行请自行打印 API 的返回值
         res = client.batch_set_cdn_domain_config(batch_set_cdn_domain_config_request)
         logging.info(f"CDN域名配置完成 {domain} {res}")
-
-
-if __name__ == '__main__':
-    ins = AliCDN()
-    ins.optimization("LTAI5tKiSoiUJAcq3YogMVeo", "6y0p8UivebogEokmmvbVtQSz115Yuc", "taotao0712.com")
