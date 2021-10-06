@@ -73,10 +73,10 @@ class App:
         self.upload.config(state='disabled')
         try:
             if self.table.get() == 'lubei':
-                if self.uploadipa('LTAI5tKiSoiUJAcq3YogMVeo', '6y0p8UivebogEokmmvbVtQSz115Yuc', 'lbipa', self.imgen.get(), 'lubei.ipa'):
+                if self.uploadipa('', '', 'lbipa', self.imgen.get(), 'lubei.ipa'):
                     messagebox.showinfo('提示', '撸呗IPA文件更新成功')
             elif self.table.get() == '91lu':
-                if self.uploadipa('LTAI5tDdKhFEdpVGTGUXsQep', 'BknC4YsgBALzxLwIC8Jy5sAZ91Fcx9', '91ipa', self.imgen.get(), '91lu.ipa'):
+                if self.uploadipa('', '', '91ipa', self.imgen.get(), '91lu.ipa'):
                     messagebox.showinfo('提示', '91撸IPA文件更新成功')
         except Exception as e:
             messagebox.showerror(e)
