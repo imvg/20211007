@@ -13,7 +13,7 @@ import time
 logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s", level=logging.DEBUG)
 
 # auth = oss2.Auth('LTAI4G5otMb3k5NLpCCbA5B7', 'CL3vfVxc89dzyaaLhtfWa52vmkgUso')  # xyaccount
-auth = oss2.Auth('LTAI5tMehJDuCAnhM1ZaoQbx', 'tjgPDMNH1xffnzRFk1ANuULPvcZPm9')  # qzh7537
+auth = oss2.Auth('', '')  # qzh7537
 bucket = oss2.Bucket(auth, 'http://oss-accelerate.aliyuncs.com', 'lubeiimages')
 channelDir = '/root/mobile/android/release/'
 backupDir = '/root/backup'
