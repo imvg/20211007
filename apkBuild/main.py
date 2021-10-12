@@ -24,7 +24,7 @@ session.mount('https://', HTTPAdapter(max_retries=3))
 
 def sendMessage(msg, chat_id='-1001175029636'):
     data = {'chat_id': chat_id, 'text': msg}
-    token = '1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs8'
+    token = '1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs9'
     try:
         res = session.post(url=f'https://api.telegram.org/bot{token}/sendMessage', data=data, timeout=30)
         if res.status_code != 200:
