@@ -149,7 +149,7 @@ class MyBot(telepot.Bot):
 
 if __name__ == '__main__':
     try:
-        TOKEN = '1948950840:AAG26mRFenmzzDagoMv7CGhuAutUMJHGMJE'
+        TOKEN = 'botToken'
         bot = MyBot(TOKEN)
         print('Listening ...')
         MessageLoop(bot).run_forever(timeout=30)
