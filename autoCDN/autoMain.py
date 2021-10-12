@@ -175,8 +175,8 @@ class AutoMain:
 
 if __name__ == '__main__':
     domainlist = ['qhwjgh.com']
-    access_key = 'LTAI5tPsrzyNWW4U7XYs5ufd'
-    secret_key = 'rfkX7m8PeDOQhdgUZoiGdovGrWN6Z4'
+    access_key = ''
+    secret_key = ''
     ins = AutoMain(access_key, secret_key)
     if ins.autoAdd(domainList=domainlist, source1='source7.dpagesource.com', source2='source8.dpagesource.com', tips='xhy落地页', merchant='xhy'):
         logging.info(f"配置成功")
