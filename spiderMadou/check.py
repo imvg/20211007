@@ -41,8 +41,8 @@ def getVideos():
 
 
 def upfile(sfile, dfile):
-    secret_id = 'AKIDc084lCWN1SeaFnp2NSFnWy81fm2EF4pK'
-    secret_key = 'NAiAST3RovlMbZIl2yZu87pJ7i3C7wiF'
+    secret_id = ''
+    secret_key = ''
     region = 'ap-hongkong'
     domain = 'sourcefile-1304080031.cos.accelerate.myqcloud.com'
     client = CosS3Client(CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key, Domain=domain))
