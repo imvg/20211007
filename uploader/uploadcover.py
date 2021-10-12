@@ -245,7 +245,7 @@ class App:
                 
     def sendMessage(self, Message):
         self.setlog("发送通知...")
-        BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs8"
+        BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs9"
         ChannelId = "-1001534403340"
         try:
             data = {'chat_id': str(ChannelId).replace('\'', ''), 'text': Message}
