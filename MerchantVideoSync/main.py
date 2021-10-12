@@ -108,7 +108,7 @@ def controler(tableList: list):
 
 def sendMessage(Message):
     logging.debug(f"发送通知...")
-    BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs8"
+    BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs9"
     ChannelId = "-1001175029636"
     try:
         data = {'chat_id': str(ChannelId).replace('\'', ''), 'text': '<视频数据表同步> '+Message}
