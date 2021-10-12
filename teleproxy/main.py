@@ -54,7 +54,7 @@ def cdbWarning():
                       f"产品:{insName}, 策略:{policyName}({policyCnName})\n" \
                       f"实例: {insId}, 触发告警策略值: {warningName} {calcType} {calcValue}{unit}\n" \
                       f"当前告警值: {currentValue}{unit}"
-            BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs8"
+            BotToken = "1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs9"
             ChannelId = "-1001398844049"
             data = {'chat_id': str(ChannelId).replace('\'', ''), 'text': Message}
             requests.post(url=f'https://api.telegram.org/bot{BotToken}/sendMessage', data=data)
