@@ -13,13 +13,13 @@ import os
 logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s", level=logging.INFO)
 
 s3_id = "AKIA3NIGOUTKFVLQMCFB"
-s3_key = "g2lvpP6H9Fm5D4jovk1OvQd8RVmGjkCJmCTwlk+K"
+s3_key = "g2lvpP6H9Fm5D4jovk1OvQd8RVmGjkCJmCTwlk+L"
 session = Session(s3_id, s3_key, region_name='ap-east-1')
 s3_client = session.client('s3')
 s3_bucket = "vodbackup"
 
-cos_id = 'AKIDc084lCWN1SeaFnp2NSFnWy81fm2EF4pK'
-cos_key = 'NAiAST3RovlMbZIl2yZu87pJ7i3C7wiF'
+cos_id = ''
+cos_key = ''
 region = 'ap-hongkong'
 cos_domain = 'sourcefile-1304080031.cos.accelerate.myqcloud.com'
 cos_client = CosS3Client(CosConfig(Region=region, SecretId=cos_id, SecretKey=cos_key))
