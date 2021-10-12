@@ -129,7 +129,7 @@ def sendMessage(message):
     data = {'chat_id': '-1001398844049', 'text': message}
     try:
         res = requests.post(
-            url='https://api.telegram.org/bot1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs8/sendMessage', data=data)
+            url='https://api.telegram.org/bot1590534238:AAFYL23LSVWZdZi4H_Q_Fy7v1ivggD7UBs9/sendMessage', data=data)
         if res.status_code != 200:
             logging.error(res)
     except Exception as err:
