@@ -133,8 +133,8 @@ def encrypt(sfile, dfile):
 def upload(bucketUrl, sfile, uri):
     try:
         if requests.get(bucketUrl + uri).status_code == 404:
-            secret_id = 'AKIDc084lCWN1SeaFnp2NSFnWy81fm2EF4pK'
-            secret_key = 'NAiAST3RovlMbZIl2yZu87pJ7i3C7wiF'
+            secret_id = ''
+            secret_key = ''
             region = 'ap-hongkong'
             domain = 'sourcefile-1304080031.cos.accelerate.myqcloud.com'
             client = CosS3Client(CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key, Domain=domain))
