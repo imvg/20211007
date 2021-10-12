@@ -10,14 +10,14 @@ from multiprocessing import Pool
 logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s", level=logging.WARNING)
 
 
-secret_id = 'AKIDc084lCWN1SeaFnp2NSFnWy81fm2EF4pK'
-secret_key = 'NAiAST3RovlMbZIl2yZu87pJ7i3C7wiF'
+secret_id = ''
+secret_key = ''
 region = 'ap-hongkong'
 client = CosS3Client(CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key))
 cos_bucket = 'sourcefile-1304080031'
 
-des_secret_id = 'AKIDFH2Ypw3QSDhwwhufmhNn24uXv26vOvzp'
-des_secret_key = 'ocBbnmVyEExSlsiKfmxrU5RWNM8hz2oN'
+des_secret_id = ''
+des_secret_key = ''
 des_region = 'ap-hongkong'
 des_client = CosS3Client(CosConfig(Region=des_region, SecretId=des_secret_id, SecretKey=des_secret_key))
 des_cos_bucket = 'srcfiles-1304147283'
