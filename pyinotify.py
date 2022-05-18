@@ -31,3 +31,4 @@ if __name__ == '__main__':
     except Exception as e:
         logging.error(e)
         logging.error('全局异常')
+
